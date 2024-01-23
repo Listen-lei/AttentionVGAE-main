@@ -1,6 +1,6 @@
 # AttentionVGAE
 ___
-![Uploading AVGN-last.png…]()
+![AVGN-last](https://github.com/Listen-lei/AttentionVGAE-main/assets/57699859/63c3e5d7-d21d-4f9c-b372-c9c5bb63024a)
 
 ___
 ## Abstract
