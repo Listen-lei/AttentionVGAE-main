@@ -1,6 +1,7 @@
 # AttentionVGAE
 ___
-![AVGN_V3](https://github.com/Listen-lei/AttentionVGAE/assets/57699859/a3b851ea-ab30-4cfc-aab2-438afd7cfd9c)
+![Uploading AVGN-last.png…]()
+
 ___
 ## Abstract
 Although recent breakthroughs in spatially resolved transcriptomics technology have provided a comprehensive opportunity to delve into gene expression patterns within the tissue microenvironment, the results of prior related research have been unsatisfactory. In this
