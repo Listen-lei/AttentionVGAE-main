@@ -20,8 +20,7 @@ numpy == 1.22.3
 ```
 
 ## Run
-```
-First install the environment
+
 ```python
 from run_analysis import RunAnalysis
 import scanpy as sc
@@ -55,8 +54,6 @@ adata.obsm["emb"] = emb
 adata = handle._get_cluster_data(adata, n_domains=n_domains, priori=True)
 
 sc.pl.spatial(adata, color='refine spatial domain', frameon=False, spot_size=150, img_key='hires')
-```
-
 ```
   
 ## Acknowledgement
