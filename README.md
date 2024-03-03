@@ -11,11 +11,13 @@ tissue gene expression, adaptively focusing on key features and alleviating the 
 an aspect that current graph neural networks have not extensively addressed. Benchmark testing demonstrates its significant efficacy in elucidating tissue anatomy and interpreting tumor heterogeneity, indicating its potential in advancing spatial transcriptomics research and understanding complex  biological phenomena.
 ```
 ## Requirement
-  python == 3.9  
+```
+python == 3.9  
 torch == 1.13.0  
 scanpy == 1.9.2  
 anndata == 0.8.0  
-numpy == 1.22.3  
+numpy == 1.22.3
+```
 
 ## Run
   First install the environment  
