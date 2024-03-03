@@ -20,8 +20,44 @@ numpy == 1.22.3
 ```
 
 ## Run
-  First install the environment  
-  
+```
+First install the environment
+```python
+from run_analysis import RunAnalysis
+import scanpy as sc
+data_path = "/data/AttentionVGAE-main/data/DLPFC" 
+data_name = '151673' 
+save_path = "../result"
+n_domains = 7
+
+handle = RunAnalysis(
+    save_path=save_path,
+    use_gpu=True
+)
+
+adata = handle._get_adata(platform="Visium", data_path=data_path, data_name=data_name)
+
+adata = handle._get_image_crop(adata, data_name=data_name)
+
+adata = handle._get_augment(adata, spatial_type="LinearRegress", use_morphological=True)
+
+graph_dict = handle._get_graph(adata.obsm["spatial"], distType="KDTree")
+
+data = handle._data_process(adata, pca_n_comps=128 )
+emb = handle._fit(
+    data=data,
+    graph_dict=graph_dict,
+    Conv_type='GCNConv'
+    )
+
+adata.obsm["emb"] = emb
+
+adata = handle._get_cluster_data(adata, n_domains=n_domains, priori=True)
+
+sc.pl.spatial(adata, color='refine spatial domain', frameon=False, spot_size=150, img_key='hires')
+
+
+```
   
 ## Acknowledgement
   Thanks to the input of the relevant researchers, especially the excellent code developers in the field, to provide a precedent for all the research of the later, best wishes.
