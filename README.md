@@ -47,7 +47,7 @@ adata.obsm["emb"] = emb
 
 adata = handle._get_cluster_data(adata, n_domains=n_domains, priori=True)
 
-sc.pl.spatial(adata, color='refine spatial domain', frameon=False, spot_size=150, img_key='hires')
+sc.pl.spatial(adata, color='refine spatial domain',  spot_size=150)
 ```
   
 ## Acknowledgement
