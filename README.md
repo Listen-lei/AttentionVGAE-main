@@ -13,6 +13,14 @@ anndata == 0.8.0
 numpy == 1.22.3
 ```
 
+## Dataset
+```
+(1) Human DLPFCs within the spatialLIBD at http://spatial.libd.org/spatialLIBD.  
+(2) Adult mouse brain (fresh-frozen), Adult Human Glioblastoma Multiforme, and Infiltrating ductal carcinoma datasets at https://support.10xgenomics.com/spatial-gene-expression/datasets.  
+(3) Mouse embryo data, Dorsal_midbrain_celand, and Adult mouse hemi-brain data at https://db.cngb.org/stomics/mosta.  
+(4) Hippocampus dataset at https://portals.broadinstitute.org/single_cell/study/slide-seq-study.  
+```
+
 ## Run
 
 ```python
@@ -49,7 +57,7 @@ adata = handle._get_cluster_data(adata, n_domains=n_domains, priori=True)
 
 sc.pl.spatial(adata, color='refine spatial domain',  spot_size=150)
 ```
-  
+
 ## Acknowledgement
 ```
 Thanks to the input of the relevant researchers, especially the excellent code developers in the field, to provide a precedent for all the research of the later, best wishes.
