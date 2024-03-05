@@ -57,8 +57,3 @@ adata = handle._get_cluster_data(adata, n_domains=n_domains, priori=True)
 
 sc.pl.spatial(adata, color='refine spatial domain',  spot_size=150)
 ```
-
-## Acknowledgement
-```
-Thanks to the input of the relevant researchers, especially the excellent code developers in the field, to provide a precedent for all the research of the later, best wishes.
-```
